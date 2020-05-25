@@ -1,13 +1,10 @@
 <?php
-require 'tracy/tracy.phar';
+
+require __DIR__ . '/vendor/autoload.php';
+
 use Tracy\Debugger;
+
 Debugger::enable();
 Debugger::$strictMode = true;
 
-$1 = 3;
-$2 = 4;
-dump($1 + $2);
-
-
-
-?>
+require 'skola.php'; 
